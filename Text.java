@@ -184,7 +184,7 @@ public class Text {
 		} while (antwort != 1 || antwort != 2);
 		print("Nach vielen Stunden ununterbrochener Fahrt habt ihr es bis zum Berggipfel geschafft. Dort gab es einen riesigen Eisblock.");
 		print("Ihr habt ihn zerschnitten und geschmolzen und das Wasser nach Hause gebracht.");
-		
+	}
 		
 	public static void kapitel4() {
 		int antwort = 0;
@@ -222,6 +222,5 @@ public class Text {
 		print("'Wären Sie bereit, Ihren Impfstoff in der Hauptstadt massenhaft zu produzieren? Ich kann Ihnen die notwendigen Arbeitskräfte und Materialien zur Verfügung stellen. Was sagen Sie dazu?'");
 		print("1) Nein. Wegen deines starken Hasses auf Monarchien lehnst du es ab, dem König zu helfen und schickst ihn aus deiner Apotheke. (Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich."
 	+		"2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)");
-	}
 	}
 }
