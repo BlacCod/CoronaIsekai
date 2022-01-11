@@ -29,7 +29,7 @@ public class Text {
 		/*
 		Für die Bestimmung des Rufs gibt es Optionen mit Zahlen zur Auswahl. Jede Option hat eine unterschiedliche Rufswert, die meisten erhöhen den Ruf und einige senken es.
 		*/
-	print("Du entscheidest dich, den Impfstoff erneut zu entwickeln. Der erste Schritt zur Entwicklung des Impfstoffs ist der am wenigsten komplizierte, denn zunächst brauchen wir alle Materialien, die wir brauchen, um arbeiten zu können. \nAber wo können wir Metall und Glas finden? Neulich hast du von einem Markt für die seltsamsten Verkäufe gehört. Die erste Station wird also der Markt sein.\n" 
+	System.out.print("Du entscheidest dich, den Impfstoff erneut zu entwickeln. Der erste Schritt zur Entwicklung des Impfstoffs ist der am wenigsten komplizierte, denn zunächst brauchen wir alle Materialien, die wir brauchen, um arbeiten zu können. \nAber wo können wir Metall und Glas finden? Neulich hast du von einem Markt für die seltsamsten Verkäufe gehört. Die erste Station wird also der Markt sein."
 	+ "1) Du fragst eine Frau im Vorbeigehen, wo der Markt ist.\n"
     + "2) Du suchst selbst auf dem Markt.\n"
     + "3) Sie suchen nach einer Karte, um herauszufinden, wo sich der Markt befindet.\n");
@@ -53,7 +53,7 @@ public class Text {
 	
 	print("Endlich kommst du auf dem Markt an, es ist ein überfüllter Ort und du kannst vor lauter Lärm kaum etwas hören. Die Läden sehen zwar nicht sehr schön aus, aber man muss hineingehen.");
 	print("Dann triffst du einen sehr seltsamen Typen, der dir sagt, dass er das hat, was du brauchst. Du folgst ihm und er legt das Metall und das Glas, das du für die Arbeit brauchst, auf den Tisch. Das Glas ist sehr teuer, also gibt er dir 3 Spiel-Karten.");
-	print("Wenn du die richtige Wahl triffst, kostet das Glas nichts, aber wenn du die falsche Wahl triffst, musst du doppelt so viel für das Glas bezahlen.\n"
+	System.out.print("Wenn du die richtige Wahl triffst, kostet das Glas nichts, aber wenn du die falsche Wahl triffst, musst du doppelt so viel für das Glas bezahlen.\n"
 	+ "1) Rote Karte\n"
 	+ "2) Gelbe Karte\n"
 	+ "3) Blaue Karte\n");
@@ -72,7 +72,7 @@ public class Text {
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
 	
 	print("Du musst ... Goldmünzen bezahlen. Schließlich hast du, die Materialien für die Entwicklung des Impfstoffs zu kaufen, die zwar etwas teuer sind, aber notwendig.");
-	print("Sie sehen ein Kind, das auf Sie zukommt und sagt: Gehst du einkaufen, Wissenschaftler? An dem Stand dort drüben ist unsere Glas arbeiter. Willst du dem Kind ein Geschenk machen?"
+	System.out.print("Sie sehen ein Kind, das auf Sie zukommt und sagt: Gehst du einkaufen, Wissenschaftler? An dem Stand dort drüben ist unsere Glas arbeiter. Willst du dem Kind ein Geschenk machen?"
 	+ "1) Eine Schokolade\n"
 	+ "2) Eine Goldmünze\n"
 	+ "3) Nichts\n ");
@@ -90,7 +90,7 @@ public class Text {
 		else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
 	print("Die Arbeit mit Glas ist nicht einfach, vor allem, wenn man es zur Entwicklung eines Impfstoffs verwenden will. Du triffst den Glasmacher.");
-	print("Dieser Mann legt den Preis für seine Arbeit nicht fest, er überlässt es dir, den Preis zu bestimmen, und er wird sehen, ob es gerecht ist oder nicht." 
+	System.out.print("Dieser Mann legt den Preis für seine Arbeit nicht fest, er überlässt es dir, den Preis zu bestimmen, und er wird sehen, ob es gerecht ist oder nicht." 
 	+ "1) 2 Silbermünzen: Der Glasarbeiter fühlt sich beleidigt. Wie kannst du ihm so wenig für seine Arbeit zahlen? Zuerst weigert er sich, den Auftrag anzunehmen, aber schließlich einigen Sie sich auf 10 Silbermünzen.\n"
 	+ "2) 10 Silbermünzen: Das ist ein gutes Angebot, der Glasarbeiter bietet Ihnen fröhlich seine Hilfe an! Dank dieser Tatsache sprechen die anderen Verkäufer gut von dir.\n"
 	+ "3) 1 Goldmünze. Der Glasarbeiter ist schockiert und fragt sich, warum jemand bereit ist, so viel für eine Glasarbeit zu bezahlen. Er nimmt das Geld dankbar an, aber er denkt dass du ein bisschen naiv bist.\n");
@@ -114,7 +114,7 @@ public class Text {
 	public static void kapitel2() {
 		// Methode für Kapitel 2
 		print("Du musst nun das Blut infizierter Menschen sammeln, um das Virus zu untersuchen. Leider hast du nicht viele Bekannte in dieser neuen Welt. Du beschließt, Werbungen auf Zettel zu schreiben und sie in der Stadt zu verteilen.");
-		print("Bevor du anfängst, überall in der Stadt Werbung zu schalten, musst du etwas schreiben, das die Leute dazu bringt, ihr infiziertes Blut zu spenden. Du hast also 3 Möglichkeiten."
+		System.out.print("Bevor du anfängst, überall in der Stadt Werbung zu schalten, musst du etwas schreiben, das die Leute dazu bringt, ihr infiziertes Blut zu spenden. Du hast also 3 Möglichkeiten."
 		+ "1) Für die Entwicklung eines Impfstoffs werden mit dem Coronavirus infizierte Freiwillige benötigt, die sich bei Interesse bitte in der Apotheke des Zentrums melden"
 		+ "2) Wollen Sie Teil der Geschichte sein und eine Pandemie beenden? Für die Entwicklung eines Impfstoffs gegen das Coronavirus werden Blutspender benötigt. Kommen Sie in die Apotheke im Stadtmitte, wenn Sie infiziert sind."
 		+ "3) Ich brauche dein Blut, um den Covid zu beenden. Wenn du willst, du kannst zu meiner Apotheke kommen.");
@@ -140,7 +140,7 @@ public class Text {
 		print("Du gehst mit deinen neu erworbenen Materialien zurück in die Apotheke und bist super müde. Du schläfst sofort ein. Als du am nächsten Tag aufwachst, hast du es geschafft, eine Kiste zu bauen, die groß genug für die Blutproben ist!");
 		print("Endlich ist der Tag gekommen. Menschen aus der ganzen Stadt kommen in deine Apotheke, um sich ihr Blut abnehmen zu lassen. Die meisten von ihnen haben eine verzweifelte Ausstrahlung. Sie müssen wirklich wollen, dass du das Heilmittel findest.");
 		print("Es scheint, dass du mit deinen Werbeplakaten gute Arbeit gemacht hast. Aber eine Frau kommt zu Ihnen und sagt: Wenn ich Ihnen mein Blut gebe, werden Sie dann ein Heilmittel finden? Oder sind Sie einfach nur ein Lügner?");
-		print("1) “Ich bin ein viel fortschrittlicherer Wissenschaftler für die Zeit, in der wir leben. Ich empfehle Ihnen, meine Anweisungen zu befolgen, wenn Sie uns alle schnell vor diesem Virus schützen wollen”.\n"
+		System.out.print("1) “Ich bin ein viel fortschrittlicherer Wissenschaftler für die Zeit, in der wir leben. Ich empfehle Ihnen, meine Anweisungen zu befolgen, wenn Sie uns alle schnell vor diesem Virus schützen wollen”.\n"
 				+ "2) “Ehh... Vielleicht, weil ich die einzige Person bin, die in dieser Apotheke arbeitet, und weil ich noch nie gescheitert bin? Du solltst ein bisschen dankbar sein…” \n"
 				+ "3) (Du wirst wütend und schreien) Du weißt nicht, was es mich gekostet hat, alle Materialien und Werkzeuge zu besorgen, und du hältst mich für einen Lügner?!  Ich brauche Ihr Blut nicht, um den Impfstoff zu finden. Raus!\n");
 		do {
@@ -221,7 +221,7 @@ public class Text {
 		print("Nach erfolgreichen Tierversuchen beschließen Sie, Versuche am Menschen durchzuführen");
 		print("Sie müssen sich nun überlegen, wie Sie die Menschen für die Prüfung Ihres Impfstoffs gewinnen können. Nach langem Überlegen entscheiden Sie sich für das Verteilen von Flugblättern.");
 		print("Darin schreiben Sie Ihre Adresse und das Datum, an dem Sie die Impfstoffdosen verabreichen werden. In welchem Viertel der Stadt verteilen Sie die Flugblätter?");
-		print("1) Die Stadtmitte. Manche freuen sich über Ihre Impfstoff Ideen. Einigen anderen ist es egal.\n"
+		System.out.print("1) Die Stadtmitte. Manche freuen sich über Ihre Impfstoff Ideen. Einigen anderen ist es egal.\n"
 		+	"2) Das Adelsviertel, dort leben die Adligen.\n"
 		+	"3) Das Viertel der Kirche.\n");
 		do {
@@ -242,7 +242,7 @@ public class Text {
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
 		
 		print("Nachdem die Flugblätter erfolgreich verteilt wurden, nähert sich der Tag der Impfung. Sie haben noch ein paar Tage Zeit, um sich darauf vorzubereiten. Was möchten Sie tun?");
-		print("1) Stellen Sie einen Assistenten ein, um das Impfverfahren zu beschleunigen. Alles läuft problemlos, die Öffentlichkeit ist froh, dass sie an Ihrer Impfkampagne teilgenommen hat. Sie erhalten 15 Rufpunkte."
+		System.out.print("1) Stellen Sie einen Assistenten ein, um das Impfverfahren zu beschleunigen. Alles läuft problemlos, die Öffentlichkeit ist froh, dass sie an Ihrer Impfkampagne teilgenommen hat. Sie erhalten 15 Rufpunkte."
 		+"2) Mieten Sie einen Musiker, der die Leute während der Impfung unterhält. Sie mieten einen Musiker. Aber er ist schlecht! Die Leute werden wütend, weil die Schlange für die Impfung so lang ist und die Musik des Barden so schlecht ist. Du verlierst 15 Rufpunkte."
 		+"3) Kaufen Sie einen Teddybär, falls einer der Freiwilligen ein Kind ist. Du kaufst einen süßen Teddybär. Leider kommen keine Kinder, was logisch ist. Welche Eltern würden ihr kleines Kind freiwillig für die Impfung eines Fremden zur Verfügung stellen? Die Leute werden wütend, weil die Schlange so lang ist und du so langsam beim Impfen bist. Ihr Ruf geht um 15 Punkte zurück..");
 		do {
@@ -260,7 +260,7 @@ public class Text {
 			else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
 		print("Sie haben die Leute gebeten, in 3 Wochen wiederzukommen, um die Folgen der Impfung zu analysieren. Jetzt müssen Sie warten. Wie verbringen Sie Ihre Zeit, während Sie warten?");
-		print("1) Du lebst dein Leben weiter, ohne irgendeine Art von Wissenschaft zu praktizieren. Was für ein ruhiges, mittelalterliches Leben!"
+		System.out.print("1) Du lebst dein Leben weiter, ohne irgendeine Art von Wissenschaft zu praktizieren. Was für ein ruhiges, mittelalterliches Leben!"
 		+ "2) Du gehst jede Nacht auf Partys. Jeder in der Stadt weiß jetzt, dass du alkoholabhängig bist. Hey, wenigstens hast du ein paar Freunde gefunden."
 		+ "3)  Sie entscheiden sich, als freiwilliger Helfer in der nahe gelegenen Kirche mitzuarbeiten. Sie helfen älteren Menschen beim Tragen von Lebensmitteln, Sie putzen die Kirche usw. Am Ende der drei Wochen sind Sie extrem müde. War es das wirklich wert?");
 		do {
@@ -282,8 +282,8 @@ public class Text {
 		print("Die Gerüchte verbreiten sich im ganzen Königreich: y/n hat das Heilmittel für Corona gefunden!");
 		print("Nachdem der König von den Gerüchten gehört hat, verlässt er das Schloss, um Ihre Apotheke zu besuchen. Er macht Ihnen ein Angebot:");
 		print("'Wären Sie bereit, Ihren Impfstoff in der Hauptstadt massenhaft zu produzieren? Ich kann Ihnen die notwendigen Arbeitskräfte und Materialien zur Verfügung stellen. Was sagen Sie dazu?'");
-		print("1) Nein. Wegen deines starken Hasses auf Monarchien lehnst du es ab, dem König zu helfen und schickst ihn aus deiner Apotheke. (Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich."
-	+		  "2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)");
+		System.out.print("1) Nein. Wegen deines starken Hasses auf Monarchien lehnst du es ab, dem König zu helfen und schickst ihn aus deiner Apotheke. (Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich."
+				+ "2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)");
 		
 		//Am Ende des Spiels, man entscheidet zwischen 2 Möglichlkeiten. Zuletzt werden die Rufpunkten gezahlt und das Ergebnis angezeigt.
 		do {
