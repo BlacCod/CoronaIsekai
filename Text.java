@@ -184,6 +184,30 @@ public class Text {
 		} while (antwort != 1 || antwort != 2);
 		print("Nach vielen Stunden ununterbrochener Fahrt habt ihr es bis zum Berggipfel geschafft. Dort gab es einen riesigen Eisblock.");
 		print("Ihr habt ihn zerschnitten und geschmolzen und das Wasser nach Hause gebracht.");
+		print("Du hast das Plasma aus dem Gerät geholt. Sie haben zwei Möglichkeiten: Mischen Sie die Flüssigkeit in einem Metallbecher oder einem Glasbecher.");
+		System.out.println("1. Metallbecher\n" 
+				+ "2. Glasbecher");
+		System.out.println("""
+				1. Metallbecher
+				2. Glasbecher
+				""");
+		do {
+			antwort = Main.scanner.nextInt();
+			if (antwort==1) {
+				print("Zunächst schien die Reaktion in Ordnung zu sein, aber dann geriet sie außer Kontrolle. Der Becher explodierte und verströmte einen stinkenden Geruch. Die Leute dort mögen den Geruch überhaupt nicht.");
+				Player.decreaseReputation(10);
+			}
+			else if (antwort==2) {
+				Player.increaseReputation(5);
+			}
+			else System.out.println("Noch einmal");
+			} while (antwort != 1 || antwort != 2);
+		print("Du hast beschlossen, es noch einmal mit dem Glasbecher zu versuchen. Es hat funktioniert, und du hast jetzt eine transparente Flüssigkeit, den Impfstoff");
+		print("Aber man muss es erst testen. Du gibst den Impfstoff in eine Glasspritze.");
+		print("Sie füllen eine Ihrer Spritzen mit dem Impfstoff und setzen sie in eine Ihrer Labormäuse ein. In der nächsten Woche werden Sie hoffentlich eine Verbesserung des Immunsystems der Maus feststellen");
+		print("Nach einigen Tagen nimmst du etwas von dem Virus, das Sie zuvor isoliert haben, und steckt es in die Maus ein");
+		print("Du führst dein Leben ein paar Tage lang weiter, ohne irgendeine Art von Wissenschaft zu betreiben. Was für ein ruhiges mittelalterliches Leben!");
+		print("Nach viel Langeweile analysierst du deine Maus. Sie scheint gesund zu sein. Es wurden keine Nebenwirkungen festgestellt. Du nimmst ihm etwas Blut ab, und es gibt keine Anzeichen für eine Krankheit!");
 	}
 		
 	public static void kapitel4() {
@@ -191,9 +215,23 @@ public class Text {
 		print("Nach erfolgreichen Tierversuchen beschließen Sie, Versuche am Menschen durchzuführen");
 		print("Sie müssen sich nun überlegen, wie Sie die Menschen für die Prüfung Ihres Impfstoffs gewinnen können. Nach langem Überlegen entscheiden Sie sich für das Verteilen von Flugblättern.");
 		print("Darin schreiben Sie Ihre Adresse und das Datum, an dem Sie die Impfstoffdosen verabreichen werden. In welchem Viertel der Stadt verteilen Sie die Flugblätter?");
-		print("1) Die Stadtmitte. Manche freuen sich über Ihre Impfstoff Ideen. Einigen anderen ist es egal. Ihr Ruf steigt um 10 Punkte."
-		+	"2) Das Adelsviertel, dort leben die Adligen. Die Adligen sind sauer, dass du so viel Papiermüll in ihrem sauberen und glänzenden Viertel verteilt hast. Dein Ruf sinkt um 10. Wiederholen Sie b."
+		print("1) Die Stadtmitte. Manche freuen sich über Ihre Impfstoff Ideen. Einigen anderen ist es egal."
+		+	"2) Das Adelsviertel, dort leben die Adligen. Die Adligen sind sauer, dass du so viel Papiermüll in ihrem sauberen und glänzenden Viertel verteilt hast."
 		+	"3) Das Viertel der Kirche. Alle religiösen Menschen denken jetzt, dass Sie das Werk eines Dämons tun. Dein Ruf sinkt um 20 Punkte. Wiederholen Sie b.");
+		do {
+		antwort = Main.scanner.nextInt();
+		if (antwort==3) {
+			Player.decreaseReputation(10);
+		}
+		else if (antwort==1) {
+			Player.increaseReputation(10);
+		}
+		else if (antwort == 2) {
+			Player.decreaseReputation(5);
+		}
+		else System.out.println("Noch einmal");
+		} while (antwort != 1 || antwort != 2 || antwort != 3);
+		
 		print("Nachdem die Flugblätter erfolgreich verteilt wurden, nähert sich der Tag der Impfung. Sie haben noch ein paar Tage Zeit, um sich darauf vorzubereiten. Was möchten Sie tun?");
 		print("Stellen Sie einen Assistenten ein, um das Impfverfahren zu beschleunigen. Alles läuft problemlos, die Öffentlichkeit ist froh, dass sie an Ihrer Impfkampagne teilgenommen hat. Sie erhalten 15 Rufpunkte.");
 		print("Mieten Sie einen Musiker, der die Leute während der Impfung unterhält. Sie mieten einen Musiker. Aber er ist schlecht! Die Leute werden wütend, weil die Schlange für die Impfung so lang ist und die Musik des Barden so schlecht ist. Du verlierst 15 Rufpunkte.");
@@ -216,11 +254,40 @@ public class Text {
 		print("1) Du lebst dein Leben weiter, ohne irgendeine Art von Wissenschaft zu praktizieren. Was für ein ruhiges, mittelalterliches Leben!"
 		+ "2) Du gehst jede Nacht auf Partys. Jeder in der Stadt weiß jetzt, dass du alkoholabhängig bist. Hey, wenigstens hast du ein paar Freunde gefunden."
 		+ "3)  Sie entscheiden sich, als freiwilliger Helfer in der nahe gelegenen Kirche mitzuarbeiten. Sie helfen älteren Menschen beim Tragen von Lebensmitteln, Sie putzen die Kirche usw. Am Ende der drei Wochen sind Sie extrem müde. War es das wirklich wert?");
+		do {
+		antwort = Main.scanner.nextInt();
+		if (antwort==1) {
+			Player.increaseReputation(5);
+		}
+		else if (antwort==3) {
+			Player.increaseReputation(10);
+		}
+		else if (antwort == 2) {
+			Player.decreaseReputation(5);
+		}
+		else System.out.println("Noch einmal");
+		} while (antwort != 1 || antwort != 2 || antwort != 3);
+
+		
 		print("Es sind jetzt drei Wochen vorbei, und die Leute kommen zurück. Nach sorgfältiger Analyse aller Patienten kann man mit Sicherheit sagen, dass sie alle gesund sind!");
 		print("Die Gerüchte verbreiten sich im ganzen Königreich: y/n hat das Heilmittel für Corona gefunden!");
 		print("Nachdem der König von den Gerüchten gehört hat, verlässt er das Schloss, um Ihre Apotheke zu besuchen. Er macht Ihnen ein Angebot:");
 		print("'Wären Sie bereit, Ihren Impfstoff in der Hauptstadt massenhaft zu produzieren? Ich kann Ihnen die notwendigen Arbeitskräfte und Materialien zur Verfügung stellen. Was sagen Sie dazu?'");
 		print("1) Nein. Wegen deines starken Hasses auf Monarchien lehnst du es ab, dem König zu helfen und schickst ihn aus deiner Apotheke. (Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich."
-	+		"2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)");
-	}
+	+		  "2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)");
+		do {
+		antwort = Main.scanner.nextInt();
+		if (antwort==1) {
+			System.out.println("Game over. Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich.");
+			System.out.println("Dein gesamtes Ruf war: " + Player.reputation);
+		}
+		else if (antwort==2) {
+			System.out.println("Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!");
+			System.out.println("Dein gesamtes Ruf war: "+ Player.reputation);
+		}
+	
+		else System.out.println("Noch einmal");
+		} while (antwort != 1 || antwort != 2);
+	
+	}	
 }
