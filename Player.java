@@ -1,29 +1,31 @@
 package main;
-/*
-	Diese Klasse kontrolliert die Informationen uber den Hauptfigur
-*/
+/** 
+ * Diese Klasse kontrolliert die Informationen über den Hauptfigur und alle Methoden, die Ruf verändern oder zugreifen können
+ * @author: Huy Vu
+ */
 public class Player {
 
-	static int reputation; // Das ist ein Ruf variabel. Es berechnet, wie berühmt unser Figur ist.
+	static int reputation = 50; // Das ist unsere Ruf. Es berechnet, wie berühmt unser Figur ist.
 
-	public Player() {
-		reputation = 50; // Am Anfang beträgt der Ruf 50.
-	}
 	
 	public static int getReputation() {return reputation;} // Getter Methode für den Ruf
 	public static void setReputation(int a) {reputation = a;} // Setter Methode für den Ruf
 	
+	/*
+	 * Diese Methode wird ein int als Parameter übergegeben, und es nimmt den Ruf um diesen Betrag zu
+	 * Syntax: Player.increaseReputation(amount)
+	 */
 	public static void increaseReputation(int amount) {
-		// Diese Methode hat ein Amount Argument.
-		// Der Ruf nimmt um den Betrag des Amounts zu.
 		System.out.println("Dein Ruf steigt um " + amount);
 		setReputation(reputation + amount);
 		System.out.println("Deine neue Ruf ist " + reputation);
 	}
 
-	
+	/*
+	 * Diese Methode wird ein int als Parameter übergegeben, und es nimmt den Ruf um diesen Betrag ab
+	 * Syntax: Player.decreaseReputation(amount)
+	 */
 	public static void decreaseReputation(int amount) {
-		// Gleiche Methode wie vorher, aber hier nimmt der Ruf ab.
 		System.out.println("Dein Ruf sinkt um " + amount);
 		setReputation(reputation - amount);
 		System.out.println("Deine neue Ruf ist " + reputation);
