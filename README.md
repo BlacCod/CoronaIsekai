@@ -19,9 +19,9 @@ java main.Main
 ```
 
 Ohne git:
-1. Download the repository and unzip with Code > Download ZIP
-2. Go to /CoronaIsekai
-3. Open cmd in current directory and run
+1. [Hier](https://github.com/BlacCod/CoronaIsekai/archive/refs/tags/v1.0.0.zip) herunterladen
+2. Zu /CoronaIsekai-1.0.0 gehen
+3. cmd hier öffnen und:
 ```
 javac -encoding ISO-8859-1 main/Main.java
 java main.Main
