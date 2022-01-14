@@ -18,7 +18,7 @@ public class Player {
 	public static void increaseReputation(int amount) {
 		System.out.println("Dein Ruf steigt um " + amount);
 		setReputation(reputation + amount);
-		System.out.println("Deine neue Ruf ist " + reputation);
+		System.out.println("Dein neue Ruf ist " + reputation);
 	}
 
 	/*
@@ -28,9 +28,9 @@ public class Player {
 	public static void decreaseReputation(int amount) {
 		System.out.println("Dein Ruf sinkt um " + amount);
 		setReputation(reputation - amount);
-		System.out.println("Deine neue Ruf ist " + reputation);
+		System.out.println("Dein neue Ruf ist " + reputation);
 		if (reputation <= 0) {
-			System.out.println("Ihr Ruf hat Null erreicht");
+			System.out.println("Dein Ruf hat Null erreicht");
 			System.out.println("Die Stadtbewohner haben keinen Respekt vor dir und wünschen dir den Tod. Du wirst vom Richter zum Tode verurteilt. Game over.");
 			System.exit(0); // Endet das Programm, Game Over
 		}
