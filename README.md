@@ -1,6 +1,7 @@
 # CoronaIsekai
 
 Programmierprojekt für den Informatikunterricht des ersten Semesters
+
 Autor: Vu Huy, Pedro, Gustavo vom Kurs T442
 Datum: 14-1-2022
 
