@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static Scanner scanner; //Scanner für andere Klasse einstellen, andere Klasse benutzen das mit Main.scanner
+	public static Scanner scanner; //Scanner für andere Klasse einstellen, andere Klassen können das mit Main.scanner benutzen
 	
 	public static void main(String[] args) {
 		scanner = new Scanner(System.in);
