@@ -46,11 +46,13 @@ public class Text {
     + "2) Du suchst selbst auf dem Markt.\n"
     + "3) Sie suchen nach einer Karte, um herauszufinden, wo sich der Markt befindet.\n");
 		/*
-		Wir verwenden das do-while-Schleife, um die verschiedene Möglichkeiten zu wahlen. Es ermöglicht, eine Aktion in einer Schleife zu wiederholen, wenn die Bedingung erfüllt ist.
+		Wir verwenden das do-while-Schleife, um die verschiedene Möglichkeiten zu wahlen. Es ermöglicht, eine Aktion in einer Schleife zu wiederholen, bis zu die Bedingung erfüllt ist.
+		Diese Logik bleibt gleich für alle weitere do-while Schleife in diesem Klasse
 		*/
 		String antwort;
 		do {
 		System.out.print(">");
+		//hier wird nextLine() (Input als String) statt nextInt() (Input als int) benutzt, weil es bringt Probleme, wenn nextInt() benutzt wird und den User schreibt ein Zeichen
 		antwort = Main.scanner.nextLine();
 		if (antwort.equals("1")) {
 			Player.increaseReputation(5);
@@ -63,7 +65,8 @@ public class Text {
 			Player.decreaseReputation(1);
 		}
 		else System.out.println("Noch einmal");
-		} while (antwort.equals("1") == false && antwort.equals("2") == false && antwort.equals("3") == false); //noch einmal wiederholen, wenn das User ein nicht gültige Antwort gibt
+		//noch einmal wiederholen, wenn das User eine nicht gültige Antwort gibt
+		} while (antwort.equals("1") == false && antwort.equals("2") == false && antwort.equals("3") == false); 
 	
 	print("Endlich kommst du auf dem Markt an, es ist ein überfüllter Ort und du kannst vor lauter Lärm kaum etwas hören. Die Läden sehen zwar nicht sehr schön aus, aber man muss hineingehen.");
 	print("Dann triffst du einen sehr seltsamen Typen, der dir sagt, dass er das hat, was du brauchst. Du folgst ihm und er legt das Metall und das Glas, das du für die Arbeit brauchst, auf den Tisch.\n Das Glas ist sehr teuer, also gibt er dir 3 Spiel-Karten.");
@@ -71,7 +74,8 @@ public class Text {
 	System.out.println("1) Rote Karte\n"
 	+ "2) Gelbe Karte\n"
 	+ "3) Blaue Karte");
-		String betrag = " ";
+		
+	String betrag = " ";
 		do {
 		System.out.print(">");
 		antwort = Main.scanner.nextLine();
@@ -88,7 +92,7 @@ public class Text {
 			betrag = "10";
 		}
 		else System.out.println("Noch einmal");
-		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
+		} while (antwort.equals("1") == false && antwort.equals("2") == false && antwort.equals("3") == false);
 	
 	print("Du musst " + betrag + " Goldmünzen bezahlen. Schließlich hast du, die Materialien für die Entwicklung des Impfstoffs zu kaufen, die zwar etwas teuer sind, aber notwendig.");
 	print("Du sehst ein Kind, das auf Sie zukommt und sagt: Gehst du einkaufen, Wissenschaftler?\n An dem Stand dort drüben ist unsere Glas arbeiter. Willst du dem Kind ein Geschenk machen?\n");
@@ -132,8 +136,8 @@ public class Text {
 		}
 		else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
-	print("Nach einem langen Einkaufstag bist du endlich wieder in der Apotheke, aber es ist keine Zeit zum Ausruhen. Du hast Metallnadeln, Glasspritzen und ein Arbeit zu machen. Nachdem du die ganze Nacht an der Spritze gearbeitet hast, hast du es geschafft. Der nächste Schritt ist etwas komplizierter: die Blutentnahme und die Isolierung des Virus.");
-	
+		
+	print("Nach einem langen Einkaufstag bist du endlich wieder in der Apotheke, aber es ist keine Zeit zum Ausruhen. Du hast Metallnadeln, Glasspritzen und ein Arbeit zu machen. Nachdem du die ganze Nacht an der Spritze gearbeitet hast, hast du es geschafft. Der nächste Schritt ist etwas komplizierter: die Blutentnahme und die Isolierung des Virus.");	
 	}
 
 	/*
@@ -146,7 +150,8 @@ public class Text {
 		+ "1) Für die Entwicklung eines Impfstoffs werden mit dem Coronavirus infizierte Freiwillige benötigt, die sich bei Interesse bitte in der Apotheke des Zentrums melden\n"
 		+ "2) Wollen Sie Teil der Geschichte sein und eine Pandemie beenden? Für die Entwicklung eines Impfstoffs gegen das Coronavirus werden Blutspender benötigt. Kommen Sie in die Apotheke im Stadtmitte, wenn Sie infiziert sind.\n"
 		+ "3) Ich brauche dein Blut, um den Covid zu beenden. Wenn du willst, du kannst zu meiner Apotheke kommen.\n");
-		String antwort = ""; // Input von User
+		
+		String antwort = ""; // Input von User speichern
 		do {
 		System.out.print(">");
 		antwort = Main.scanner.nextLine();
@@ -161,6 +166,7 @@ public class Text {
 		}
 		else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false && antwort.equals("3") == false);
+		
 		print("Aufgrund deiner bisherigen Erfahrungen als Wissenschaftler weißt du, dass du für die Untersuchung des Virus eine Kühlbox zur Lagerung der Blutproben brauchst. Da Sie sich bereits in der Stadtmitte befinden, halten Sie im Einkaufszentrum an, um Eis zu kaufen, und du musst auch einige Materialien kaufen, um die Lagerbox für das Blut zu bauen. Du hast Leder und Glas gekauft.");
 		print("Du gehst mit deinen neu erworbenen Materialien zurück in die Apotheke und bist super müde. Du schläfst sofort ein. Als du am nächsten Tag aufwachst, hast du es geschafft, eine Kiste zu bauen, die groß genug für die Blutproben ist!");
 		print("Endlich ist der Tag gekommen. Menschen aus der ganzen Stadt kommen in deine Apotheke, um sich ihr Blut abnehmen zu lassen. Die meisten von ihnen haben eine verzweifelte Ausstrahlung. Sie müssen wirklich wollen, dass du das Heilmittel findest.");
@@ -182,8 +188,8 @@ public class Text {
 			Player.decreaseReputation(5);
 		}
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
-		print("Nach einem langen Arbeitstag hast du alle notwendigen Beweise gesammelt und gesichert, um das Verfahren fortzusetzen. Gute Arbeit! Jetzt ist es an der Zeit, sich auszuruhen und sich auf den morgigen Tag vorzubereiten. "
-			+ "Der Impfstoff gegen das Coronavirus rückt immer näher! (minigame im Traum)");
+		
+		print("Nach einem langen Arbeitstag hast du alle notwendigen Beweise gesammelt und gesichert, um das Verfahren fortzusetzen. Gute Arbeit! Jetzt ist es an der Zeit, sich auszuruhen und sich auf den morgigen Tag vorzubereiten. Der Impfstoff gegen das Coronavirus rückt immer näher! (minigame im Traum)");
 		print("Sie wachen ausgeruht auf. Das erste, was Sie am Morgen tun, ist, die Blutproben zu überprüfen. Sie scheinen in Ordnung zu sein. Du bereitest dir ein Frühstück zu und beginnst nach dem Essen mit den Blutproben zu experimentieren. Du legst einige der Proben in deinen Apotheken-Apparat, um sie zu zentrifugieren.");
 		print("Nach einiger Zeit im Apparat können Sie nun deutlich verschiedene Abschnitte des Blutes im Inneren des Glases sehen. Sie erkennen einen dieser Abschnitte, nämlich das Plasma.");
 		print("Das Plasma ist ein heller, bernsteinfarbener, flüssiger Bestandteil des Blutes, der von den Blutzellen befreit ist, aber Proteine und andere Bestandteile des Vollbluts in sich birgt. Diese Proteine wollen Sie für die Entwicklung des Impfstoffs verwenden.");
@@ -203,6 +209,7 @@ public class Text {
 		print("Mitten in Ihrer Suche begegnen Sie einem Grizzlybären. Wie schrecklich! Was werden Sie tun?");
 		System.out.println("1. Leise weglaufen\n"
 				+ "2. Den Bären anschreien\n");
+		
 		String antwort = "";
 		do {
 			System.out.print(">");
@@ -221,12 +228,14 @@ public class Text {
 				System.out.println("Noch einmal");
 			}
 		} while (antwort.equals("1") == false && antwort.equals("2") == false);
+		
 		print("Nach vielen Stunden ununterbrochener Fahrt habt ihr es bis zum Berggipfel geschafft. dort gab es einen riesigen Eisblock.");
 		print("Ihr habt ihn zerschnitten und geschmolzen und das Wasser nach Hause gebracht.");
 		print("Du hast das Plasma aus dem Gerät geholt. Sie haben zwei Möglichkeiten: Mischen Sie die Flüssigkeit in einem Metallbecher oder einem Glasbecher.");
 		System.out.println("1. Metallbecher\n" 
 				+ "2. Glasbecher");
 		System.out.print(">");
+		
 		do {
 			antwort = Main.scanner.nextLine();
 			if (antwort.equals("1")) {
@@ -238,6 +247,7 @@ public class Text {
 			}
 			else System.out.println("Noch einmal");
 			} while (antwort.equals("1") == false && antwort.equals("2") == false);
+		
 		print("Du hast beschlossen, es noch einmal mit dem Glasbecher zu versuchen. Es hat funktioniert, und du hast jetzt eine transparente Flüssigkeit, den Impfstoff");
 		print("Aber man muss es erst testen. Du gibst den Impfstoff in eine Glasspritze.");
 		print("Sie füllen eine Ihrer Spritzen mit dem Impfstoff und setzen sie in eine Ihrer Labormäuse ein. In der nächsten Woche werden Sie hoffentlich eine Verbesserung des Immunsystems der Maus feststellen");
@@ -258,6 +268,7 @@ public class Text {
 		System.out.print("1) Die Stadtmitte. Manche freuen sich über Ihre Impfstoff Ideen. Einigen anderen ist es egal.\n"
 		+	"2) Das Adelsviertel, dort leben die Adligen.\n"
 		+	"3) Das Viertel der Kirche.\n");
+		
 		do {
 		System.out.print(">");
 		antwort = Main.scanner.nextLine();
@@ -296,6 +307,7 @@ public class Text {
 			}
 			else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
+		
 		print("Sie haben die Leute gebeten, in 3 Wochen wiederzukommen, um die Folgen der Impfung zu analysieren. Jetzt müssen Sie warten. Wie verbringen Sie Ihre Zeit, während Sie warten?\n");
 		System.out.print("1) Du lebst dein Leben weiter, ohne irgendeine Art von Wissenschaft zu praktizieren. Was für ein ruhiges, mittelalterliches Leben!"
 		+ "\n2) Du gehst jede Nacht auf Partys. Jeder in der Stadt weiß jetzt, dass du alkoholabhängig bist. Hey, wenigstens hast du ein paar Freunde gefunden."
@@ -316,14 +328,12 @@ public class Text {
 		else System.out.println("Noch einmal");
 		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
 
-		
 		print("Es sind jetzt drei Wochen vorbei, und die Leute kommen zurück. Nach sorgfältiger Analyse aller Patienten kann man mit Sicherheit sagen, dass sie alle gesund sind!");
 		print("Die Gerüchte verbreiten sich im ganzen Königreich: Du hast das Heilmittel für Corona gefunden!");
 		print("Nachdem der König von den Gerüchten gehört hat, verlässt er das Schloss, um Ihre Apotheke zu besuchen. Er macht Ihnen ein Angebot:");
 		print("'Wären Sie bereit, Ihren Impfstoff in der Hauptstadt massenhaft zu produzieren? Ich kann Ihnen die notwendigen Arbeitskräfte und Materialien zur Verfügung stellen. Was sagen Sie dazu?'\n");
 		System.out.print("1) Nein. Wegen deines starken Hasses auf Monarchien lehnst du es ab, dem König zu helfen und schickst ihn aus deiner Apotheke. (Du wirst von den Rittern des Königs gekidnappt und gefoltert. Schließlich verrätst du ihnen die Schritte zur Herstellung des Impfstoffs. Danach töten sie dich.\n"
 				+ "2) Ja, das wäre fantastisch! (Sie ziehen in die Hauptstadt und beginnen mit der Produktion des Impfstoffs. Nach vier Monaten der Impfkampagne ist das Königreich endlich frei von Corona!Du erhältst einen Adelstitel und darfst als Fürst in einer nahe gelegenen Stadt leben. Was für ein großartiges Leben!)\n");
-		
 		
 		do {
 		System.out.print(">");
