@@ -8,4 +8,8 @@ Datum: 14-1-2022
 
 Dokumentation kann [hier](https://github.com/BlacCod/CoronaIsekai/blob/29942f4a95494a534620c7419012de457fbe9ede/Dokumentation%20-%20Gruppe%203%2C%20T442.pdf) gefunden werden
 
-
+Guide:
+```
+javac ./main/Main.java
+java main.Main
+```
