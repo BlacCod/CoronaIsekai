@@ -306,7 +306,7 @@ public class Text {
 				Player.increaseReputation(15);
 			}
 			else System.out.println("Noch einmal");
-		} while (antwort.equals("1") == false && antwort.equals("2") == false&& antwort.equals("3") == false);
+		} while (antwort.equals("1") == false && antwort.equals("2") == false && antwort.equals("3") == false);
 		
 		print("Sie haben die Leute gebeten, in 3 Wochen wiederzukommen, um die Folgen der Impfung zu analysieren. Jetzt müssen Sie warten. Wie verbringen Sie Ihre Zeit, während Sie warten?\n");
 		System.out.print("1) Du lebst dein Leben weiter, ohne irgendeine Art von Wissenschaft zu praktizieren. Was für ein ruhiges, mittelalterliches Leben!"
@@ -346,6 +346,6 @@ public class Text {
 		}
 		else System.out.println("Noch einmal");
 		} while (antwort.equals("1") && antwort.equals("2") == false);
-		System.out.println("Dein gesamtes Ruf war: "+ Player.getReputation()); //Die Rufpunkten werden gezahlt und gedruckt
+		System.out.println("Dein gesamte Ruf war: "+ Player.getReputation()); //Die Rufpunkten werden gezahlt und gedruckt
 	}	
 }
