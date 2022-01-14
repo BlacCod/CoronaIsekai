@@ -3,6 +3,7 @@
 Build and run
 
 Requirement: [Java SE Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/)
+
 With git:
 ```
 git clone https://github.com/BlacCod/CoronaIsekai.git
